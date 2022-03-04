@@ -15,6 +15,8 @@ body {
 	background-color: #f5f0eb;
 }
 
+/* LEFT */
+
 .left {
 	position: fixed;
 	height: 100vh;
@@ -48,11 +50,31 @@ body {
 	background-color: rgba(0, 0, 0, .5);
 }
 
+/* CONTAINER */
+
 .container {
 	min-height: 100vh;
 	width: calc(100vw - 400px);
 	margin-left: 200px;
 }
+
+.container__el {
+	min-height: 100vh;
+}
+
+/* CONTENTS */
+
+.hello {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 900;
+	font-size: 8vh;
+	color: #444346;
+	transition: all 1s ease-in-out;
+}
+
+/* HEADER */
 
 header {
 	position: fixed;
