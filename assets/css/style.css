@@ -8,6 +8,15 @@ html {
 	scroll-behavior: smooth;
 }
 
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, .7);
+}
+
+a:hover {
+	color: #cd505a;
+}
+
 body {
 	min-height: 100vh;
 	display: flex;
@@ -32,6 +41,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	gap: 30px;
 	padding: 20% 15%;
 	box-sizing: border-box;
@@ -45,7 +55,7 @@ body {
 }
 
 .logo {
-	width: 100%;
+	width: 70%;
 	height: auto;
 	opacity: .7;
 }
@@ -60,12 +70,14 @@ body {
 
 .container {
 	min-height: 100vh;
-	width: calc(100vw - 400px);
-	margin-left: 200px;
+	width: 100vw;
 }
 
 .container__el {
+	box-sizing: border-box;
 	min-height: 100vh;
+	padding: 100px 300px;
+	width: 100%;
 }
 
 /* CONTENTS */
@@ -78,6 +90,106 @@ body {
 	font-size: 8vh;
 	color: #444346;
 	transition: all 1s ease-in-out;
+}
+
+.aboutme {
+	background: #ede7e3;
+}
+
+.label {
+	color: rgba(0, 0, 0, .7);
+	font-size: 50px;
+	font-weight: 900;
+	margin-bottom: 100px;
+}
+
+.photo {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 440px;
+	margin-bottom: 100px;
+}
+
+.photo__img img {
+	width: 440px;
+	height: 440px;
+	object-fit: cover;
+	object-position: center;
+	z-index: 1;
+}
+
+.photo__img-college img {
+	object-position: 20%;
+}
+
+.photo__desc {
+	width: calc(100% - 440px);
+	margin: 0 -30px 0 30px;
+	height: calc(100% - 40px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 20px 0;
+	z-index: 2;
+}
+
+.photo__desc div {
+	color: rgba(0, 0, 0, .7);
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	align-items: center;
+}
+
+.photo__line {
+	height: 1px;
+	width: 60px;
+	background-color: black;
+}
+
+.description {
+	color: rgba(0, 0, 0, .7);
+	font-size: 22px;
+	font-weight: 500;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+	line-height: 35px;
+	border-bottom: 1px solid rgba(0, 0, 0, .7);
+	text-align: justify;
+}
+
+.description-college {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.urls {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	width: 100%;
+}
+
+.urls__container {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.urls__label {
+	font-size: 24px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, .7);
+}
+
+dl {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 20px;
+	font-weight: 500;
 }
 
 /* HEADER */
@@ -127,14 +239,8 @@ header {
 }
 
 .nav nav a {
-	text-decoration: none;
-	color: rgba(0, 0, 0, .7);
 	transition: all .3s ease-in-out;
 	font-weight: 700;
-}
-
-.nav nav a:hover {
-	color: #cd505a;
 }
 
 .header__line {
