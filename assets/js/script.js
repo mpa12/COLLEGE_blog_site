@@ -1,6 +1,6 @@
 let phrases = [
   { text: 'ПРИВЕТ МИР!' },
-  { text: 'HELLO WORDL!' },
+  { text: 'HELLO WORLD!' },
   { text: 'ПРИВІТ СВІТ!' },
   { text: 'HALLO WELT!' },
   { text: 'POZDRAV SVIJETE!' }
