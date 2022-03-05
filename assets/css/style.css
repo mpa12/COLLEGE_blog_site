@@ -184,6 +184,45 @@ body {
 	color: rgba(0, 0, 0, .7);
 }
 
+.portfolio {
+	background: #ede7e3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio__row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+}
+
+.work {
+	width: 50%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.work__img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	transition: all .4s ease-in-out;
+	overflow: hidden;
+}
+
+.work__img:hover {
+	filter: blur(3px);
+	width: 110%;
+	height: 110%;
+	object-position: center;
+	margin: -2.5% 0 0 -5%;
+	box-sizing: border-box;
+}
+
 dl {
 	display: flex;
 	flex-direction: column;
