@@ -102,6 +102,15 @@ body {
 	font-size: 50px;
 	font-weight: 900;
 	margin-bottom: 100px;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.label-active {
+    top: 0;
+    opacity: 1;
 }
 
 .photo {
@@ -110,6 +119,18 @@ body {
 	justify-content: space-between;
 	height: 440px;
 	margin-bottom: 100px;
+}
+
+.photo__img {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.photo__img-active {
+    top: 0;
+    opacity: 1;
 }
 
 .photo__img img {
@@ -159,6 +180,15 @@ body {
 	line-height: 35px;
 	border-bottom: 1px solid rgba(0, 0, 0, .7);
 	text-align: justify;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+
+.description-active {
+	top: 0;
+	opacity: 1;
+    transition: all .5s ease-in-out;
 }
 
 .description-college {
@@ -172,6 +202,16 @@ body {
 	justify-content: space-between;
 	gap: 16px;
 	width: 100%;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+
+.urls-active {
+	top: 0;
+	opacity: 1;
+    transition: all .5s ease-in-out;
 }
 
 .urls__container {
@@ -207,7 +247,15 @@ body {
 	overflow: hidden;
 	background-size: 100%;
 	background-position: center;
-	transition: all .5s ease-in-out;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.work-active {
+	top: 0;
+	opacity: 1;
 }
 
 .work:hover {
@@ -291,6 +339,7 @@ header {
 .nav nav a {
 	transition: all .3s ease-in-out;
 	font-weight: 700;
+	text-align: center;
 }
 
 .header__line {
