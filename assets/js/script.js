@@ -52,12 +52,6 @@ window.onload = function() {
 		obj = document.getElementsByClassName('work')[2];
 		objsForAnimate.push([obj, obj.offsetTop, obj.offsetTop + obj.offsetHeight]);
 
-		obj = document.getElementsByClassName('work')[3];
-		objsForAnimate.push([obj, obj.offsetTop, obj.offsetTop + obj.offsetHeight]);
-
-		obj = document.getElementsByClassName('work')[4];
-		objsForAnimate.push([obj, obj.offsetTop, obj.offsetTop + obj.offsetHeight]);
-
 		obj = document.getElementsByClassName('urls')[0];
 		objsForAnimate.push([obj, obj.offsetTop, obj.offsetTop + obj.offsetHeight]);
 	};
