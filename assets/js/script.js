@@ -13,7 +13,11 @@ function changePhrase() {
 	if (countPhrase >= phrases.length) {
 		countPhrase = 0;
 	}
-	smoothly(phrase, 'textContent', phrases[countPhrase].text);
+	try {
+		smoothly(phrase, 'textContent', phrases[countPhrase].text);
+	} catch {
+		//pass
+	}
 }
 
 setInterval(function() {
@@ -56,7 +60,11 @@ window.onload = function() {
 		objsForAnimate.push([obj, obj.offsetTop, obj.offsetTop + obj.offsetHeight]);
 	};
 
-	changeObjs();
+	try {
+		changeObjs();
+	} catch {
+		//pass
+	}
 
 	function animate() {
 		let scrollBottom = window.scrollY + window.innerHeight;
@@ -95,5 +103,18 @@ window.onload = function() {
 
 	window.onresize = function() {
 		changeObjs();
+	}
+}
+
+let theme = 'white';
+
+function changeTheme() {
+	let link_style = document.getElementById('theme');
+	if (theme == 'white') {
+		link_style.href = 'assets/css/style_dark.css';
+		theme = 'black';
+	} else {
+		link_style.href = 'assets/css/style.css';
+		theme = 'white'
 	}
 }
